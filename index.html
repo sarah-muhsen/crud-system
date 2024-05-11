@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,300;1,200;1,300&family=Kanit:ital,wght@0,200;0,300;1,300&family=Lemon&family=Merriweather:ital,wght@0,700;0,900;1,400;1,900&family=Nunito:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+        <div class="title">
+<h2>bookmarker</h2>
+<h3>bookmarker</h3>
+        </div>
+
+<div class="bookmark ">
+    <hr >
+    
+   <h1> Bookmark your favorite sites </h1>
+</div>
+</div>
+
+
+    </section>
+    <section class="mt-5">
+    <div class="container">
+        <div> <label for="sitename" class="text-capitalize">site name:</label>
+            <input oninput="validname()" class="form-control my-2" type="text" id="sitename" placeholder="Bookark Name">
+            <div class="alert alert-danger d-none" id="namemessage">
+                you should write a sitename
+
+            </div>
+        </div>
+       <div><label for="siteurl" class="text-capitalize">site URL:</label>
+        <input class="form-control my-2" type="text" id="siteurl" placeholder="Website URL">
+    </div>
+        
+        <button onclick="adddata()"class="btn add my-2">submit</button>
+        
+        <hr>
+         <table class="table ">
+            <thead>
+                <tr class="text-center caption">
+                    <td>index</td>
+                    <td>website name</td>
+                    <td>visit</td>
+                    <td>delete</td>
+                </tr>
+            </thead>
+            <tbody id="tablebody" class="text-center">
+                <tr>
+<tr><a href="" target="_blank"></a></tr>
+                </tr>
+            </tbody>
+
+        </table> 
+    </div>
+    </section>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
